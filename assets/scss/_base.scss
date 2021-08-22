@@ -1,0 +1,183 @@
+$white-color: white;
+$black-color: #212121;
+$prime-color: #3fd0d4;
+$text-color: #505050;
+$text-color-fotter: #a9a9a9;
+
+* {
+    box-sizing: inherit;
+    transition: all linear 0.2s;
+    text-decoration: none;
+    ::selection {
+        color: $white-color;
+        background: $prime-color;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    // input,
+    // select,
+    // textarea {
+    //     color: $white-color;
+    // }
+
+    // textarea:focus,
+    // input:focus {
+    //     color: $white-color;
+    // }
+    input[type='color'],
+    input[type='date'],
+    input[type='datetime'],
+    input[type='datetime-local'],
+    input[type='email'],
+    input[type='month'],
+    input[type='number'],
+    input[type='password'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='text'],
+    input[type='time'],
+    input[type='url'],
+    input[type='week'],
+    select:focus,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+// mixin =============================================
+
+@mixin animationUnderline {
+    content: ' ';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: $prime-color;
+    transition: 0.3s ease all 0.3s;
+}
+
+@mixin hoverText {
+    width: 100%;
+    transition: 0.3s ease all;
+}
+
+@mixin headingDesign {
+    font-size: 3.3rem;
+    font-family: 'Satisfy', sans-serif;
+    color: $prime-color;
+    margin: 0;
+    font-weight: 500;
+}
+
+@mixin titleDesign {
+    font-weight: 600;
+    font-size: 6.5rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+@mixin desrDesign {
+    font-size: 1.7rem;
+    line-height: 24px;
+    color: $text-color;
+    margin-top: 15px;
+}
+
+// Animation ===========================================
+
+@keyframes infoCard {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes text-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(-30%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes growth {
+    0% {
+        transform: scale(0);
+        // opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        // opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Slide {
+    25% {
+        background: url(../image/skiing-slider-img-2.jpg) center / cover no-repeat;
+    }
+    50% {
+        background: url(../image/skiing-slider-img-1.jpg) top / cover no-repeat;
+    }
+    75% {
+        background: url(../image/skiing-parallax-1.jpg) center / cover no-repeat;
+    }
+    100% {
+        background: url(../image/skiing-slider-img-1.jpg) center / cover no-repeat;
+    }
+}
+
+@keyframes Slide-review {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        margin-left: -100px;
+    }
+    40% {
+        margin-left: -500px;
+    }
+    60% {
+        margin-left: -550px;
+    }
+    80% {
+        margin-left: -550px;
+    }
+    // 90% {margin-left: -400px;}
+}

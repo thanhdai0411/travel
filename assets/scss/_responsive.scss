@@ -1,0 +1,348 @@
+/* MObile */
+@media (max-width: 739px) {
+    .header {
+        display: none;
+    }
+    .slider {
+        .slide-img {
+            height: 500px;
+        }
+        .slider-content {
+            .slider-text {
+                // padding : 0 40px ;
+                .slider-text__header {
+                    p {
+                        font-size: 3.4rem;
+                    }
+                }
+                .slider-text__title {
+                    p {
+                        font-size: 3.5rem;
+                        padding: 20px 0;
+                    }
+                }
+                .slider-text__desr {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .slider-icon__left,
+        .slider-icon__right {
+            display: none;
+        }
+    }
+
+    .container-video {
+        width: 80%;
+        // height  : 200px ;
+        .video-content {
+            width: 100%;
+            .video__main {
+                .video__img {
+                    height: 180px;
+                }
+                .video__btn {
+                    width: 50px;
+                    top: 41%;
+                    right: 42%;
+                }
+            }
+            .video__disr {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .video-text {
+            padding: 60px 0 5px;
+            .video__heading {
+                h2 {
+                    @include headingDesign;
+                    font-size: 3.3rem;
+                }
+            }
+            .video__title {
+                h1 {
+                    @include titleDesign;
+                    font-size: 3.4rem;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+
+    .slide-review {
+        .slide-review__text {
+            width: 100%;
+            margin: 0 auto;
+            h2 {
+                font-size: 3.5rem;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        .slide-review__card {
+            display: block;
+            margin: 0 10px;
+            padding: 30px 20px;
+
+            // padding : 0 ;
+            .slide-review__wrapper {
+                display: block;
+                text-align: center;
+                img {
+                    // display: block;
+                    width: 107px;
+                    height: 107px;
+                    margin: 0;
+                }
+                .slide-review__info {
+                    text-align: center;
+                    h3 {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-place {
+        .place-text {
+            .place-text__header {
+                h2 {
+                    @include headingDesign;
+                    font-size: 3.3rem;
+                }
+            }
+            .place-text__title {
+                h1 {
+                    @include titleDesign;
+                    font-size: 3.5rem;
+                }
+            }
+        }
+        .place__content {
+            display: block;
+
+            .place__info {
+                img {
+                    padding-top: 30px;
+                }
+
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .container-teams {
+        .container-number {
+            display: flex;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            justify-content: center;
+            .number-tour {
+                // width : 102px ;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .container-choose {
+        .choose-text {
+            .choose-text__header {
+                h2 {
+                    @include headingDesign;
+                    font-size: 3.3rem;
+                }
+            }
+            .choose-text__title {
+                h1 {
+                    @include titleDesign;
+                    font-size: 3.5rem;
+                }
+            }
+            .choose-text__desr {
+                width: 100%;
+                margin: 0 auto;
+                p {
+                    @include desrDesign;
+                    font-size: 1.3rrem;
+                }
+            }
+        }
+        .choose-img {
+            display: block;
+            width: 100%;
+
+            .choose-img__section {
+                text-align: center;
+
+                width: 280px;
+                height: 280px;
+                margin: 40px auto;
+            }
+            .choose-icon {
+                right: 12%;
+            }
+        }
+    }
+
+    .fotter { 
+        padding: 100px 30px 20px;
+        .fotter__date {
+            padding: 50px 15px;
+        }
+        .fotter__sub {
+            padding: 0px 15px 55px;
+            
+        }
+        .fotter__end {
+            
+            padding: 0px 15px ;
+           
+        }
+        
+    }
+}
+// Tablet
+@media (min-width: 740px) and (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+    html {
+        overflow-x: hidden;
+    }
+    .slider {
+        .slide-img {
+            height: 550px;
+        }
+        .slider-content {
+            .slider-text {
+                padding: 0 40px;
+                .slider-text__title {
+                    p {
+                        font-size: 7.5rem;
+                    }
+                }
+            }
+            .slider-text__desr { 
+                width : 600px ; 
+                margin : 0 auto ; 
+            }
+        }
+        .slider-icon__left,
+        .slider-icon__right {
+            display: none;
+        }
+    }
+    .container-video {
+        width: 90%;
+        .video-content {
+            width: 100%;
+            .video__disr {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .slide-review {
+        .slide-review__text {
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        .slide-review__card {
+            display: block;
+            margin: 0 10px;
+            // padding : 0 ;
+            .slide-review__wrapper {
+                display: block;
+                text-align: center;
+                img {
+                    // display: block;
+                    width: 107px;
+                    height: 107px;
+                    margin: 0;
+                }
+                .slide-review__info {
+                    text-align: center;
+                    h3 {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-place {
+        .place__content {
+            display: block;
+
+            .place__info {
+                img {
+                    padding-top: 30px;
+                }
+
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .container-teams {
+        .container-number {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .number-tour {
+                // width : 102px ;
+                padding: 20px 80px;
+            }
+        }
+    }
+
+    .container-choose {
+        .choose-img {
+            display: flex;
+            flex-wrap: wrap;
+
+            .choose-img__section {
+                width: 280px;
+                height: 280px;
+                margin-bottom: 40px;
+            }
+            .choose-icon {
+                right: 12%;
+            }
+        }
+    }
+
+    .fotter { 
+        .fotter__sub {
+            padding: 50px 15px;
+            
+        }
+        .fotter__end {
+            padding: 50px 15px;
+           
+        }
+       
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1025px) {
+    .header-mobi {
+        display: none;
+    }
+    .container-form{
+        display: none;
+    }
+}
